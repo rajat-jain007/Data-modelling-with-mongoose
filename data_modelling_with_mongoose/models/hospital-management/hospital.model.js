@@ -22,6 +22,12 @@ const hospitalSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    // Like Heart Specialist, Eye Specialist etc, etc
+    specilizedIn: [
+      {
+        type: String,
+      },
+    ],
   },
   { timestamps: true }
 );
